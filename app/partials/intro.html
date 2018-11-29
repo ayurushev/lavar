@@ -1,0 +1,20 @@
+<div background-tiles ng-if="step1"></div>
+<section class="center-container">
+	<div style="color: #EF271B; font-size: 13vw" anime-text effect="fx2" on-complete="complete('step1')">Привет!</div>
+	<div style="font-size: 7vw; font-weight: 300"  anime-text effect="fx2" on-complete="complete('step2')" ng-if="step1">меня зовут <span style="font-weight: 500">Андрей</span></div>
+	<div style="font-size: 5vw; font-weight: 300; text-align: center" anime-text effect="fx4" duration="500" on-complete="complete('step3')" ng-if="step2">
+		<div>Я живу в городе <span style="font-weight: 500">Калининграде</span></div>
+		<div class="reflect-2">
+			<span kaliningrad-svg></span>
+		</div>
+	</div>
+	<div style="font-size: 3.5vw; font-weight: 300; text-align: center" anime-text effect="fx4" on-complete="complete('step4')" ng-if="step3">
+		<div>и увлекаюсь разработкой <span style="font-weight: 500">приложений</span> и <span style="font-weight: 500">сайтов</span></div>
+		<div class="reflect-2">
+			<span gear-svg></span>
+		</div>
+	</div>
+	<div style="font-size: 3.5vw; font-weight: 300; text-align: center" anime-text effect="fx4" on-complete="complete('step5')" ng-if="step4">
+		Здесь представлена краткая информация обо мне<br>и некоторых моих работах
+	</div>
+</section>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://lavar.mercloud.com/intro</loc>
+		<priority>1.0</priority>
+		<lastmod>2018-11-13</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://lavar.mercloud.com/home</loc>
+		<priority>1.0</priority>
+		<lastmod>2018-11-13</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://lavar.mercloud.com/home/about</loc>
+		<priority>1.0</priority>
+		<lastmod>2018-11-13</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://lavar.mercloud.com/home/projects</loc>
+		<priority>1.0</priority>
+		<lastmod>2018-11-13</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>https://lavar.mercloud.com/home/contact</loc>
+		<priority>1.0</priority>
+		<lastmod>2018-11-13</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+</urlset>

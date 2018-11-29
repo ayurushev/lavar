@@ -57,7 +57,7 @@ app.directive('anime', [function() {
 
 			// apply initial
 			element.css(effects[scope.effect].initial);
-			//
+
 			anime(angular.extend({
 				targets: element[0],
 				complete: function() {

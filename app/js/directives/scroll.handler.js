@@ -27,7 +27,7 @@ app.directive('scrollHandler', ['$document', '$timeout', '$transitions', functio
 
 			$transitions.onStart({}, function(trans) {
 				collapse(false);
-  		});
+			});
 
   		$timeout(function() {
   			mainMenu = $document[0].querySelector('#mainMenu');

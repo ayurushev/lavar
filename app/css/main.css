@@ -5,19 +5,16 @@
 html, body {
 	margin: 0;
 	padding: 0;
-
 	width: 100%;
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: calc(12px + 0.5vw);
-	/*background-color: #472C1B;*/
-	/*background: linear-gradient(#333, #555);*/
 }
 
 a {
 	text-decoration: none;
-	color: #E65100;	
+	color: #E65100;
 }
 
 h1, h2, h3, h4 {
@@ -40,7 +37,6 @@ input:focus, textarea:focus {
 button {
 	background-color: #FFF;
 	border: none;
-	/*border: 1px solid #DDD;*/
 	font-size: calc(12px + 0.5vw);
 	padding: 8px;
 }
@@ -57,7 +53,6 @@ button:not(:disabled) {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	/*z-index: -1;*/
 }
 
 .tiles .row {
@@ -67,17 +62,10 @@ button:not(:disabled) {
 }
 
 .tiles .row .tile {
-	/*flex: 1;*/
 	flex: 0 0 auto;
-	/*display: block;*/
-	/*min-height: 50px;
-	min-width: 50px;*/
 	width: 20vw;
 	height: 20vw;
 	transform: translateZ(0);
-	/* initial color */
-	/*background-color: #E28413;
-	margin: 1px;*/
 	opacity: 0;
 }
 
@@ -105,6 +93,7 @@ button:not(:disabled) {
 .flex {
 	display: flex;
 }
+
 .flex.column {
 	flex-direction: column;
 }
@@ -112,13 +101,16 @@ button:not(:disabled) {
 .left-margin {
 	margin-left: 36px;
 }
+
 @media (max-width: 767px) {
 	.flex.column-sm {
 		flex-direction: column;
 	}
+
 	.flex.center-sm {
 		align-items: center;
 	}
+
 	.left-margin {
 		margin-left: 0;
 	}
@@ -141,8 +133,6 @@ button:not(:disabled) {
 }
 
 .title {
-	/*font-size: calc(32px + 6vw);*/
-	/*font-size: 6vw;*/
 	font-size: 8vw;
 	font-weight: 300;
 }
@@ -157,21 +147,15 @@ button:not(:disabled) {
 
 #mainMenu {
 	position: absolute;
-	/*background-color: #C200FB;*/
-	/*border-top: 4px solid #BF360C;*/
 	background: linear-gradient(270deg, #E64A19, #EF6C00);
 	background-size: 200% 200%;
-
 	-webkit-animation: mainMenuBgAnim 15s ease infinite;
 	-moz-animation: mainMenuBgAnim 15s ease infinite;
 	animation: mainMenuBgAnim 15s ease infinite;
-
 	font-size: calc(12px + 1.5vw);
 	font-weight: 300;
-	/*height: calc(80px + 15%);*/
 	height: 25%;
 	width: 100%;
-	/*transition: box-shadow .5s ease-in-out;*/
 	transition: height 250ms;
 	z-index: 1;
 }
@@ -188,7 +172,7 @@ button:not(:disabled) {
 	100% { background-position: 0% 50% }
 }
 
-@keyframes mainMenuBgAnim { 
+@keyframes mainMenuBgAnim {
 	0% { background-position: 0% 50% }
 	50% { background-position: 100% 50% }
 	100% { background-position: 0% 50% }
@@ -208,10 +192,6 @@ button:not(:disabled) {
 }
 
 #mainMenu a.active {
-	/*text-shadow: -1px -1px 1px #EEE, 1px -1px 1px #EEE, -1px 1px 1px #DDD, 1px 1px 1px #DDD;*/
-	/*border-bottom: 2px solid #FFF;*/
-	/*padding-bottom: 6px;*/
-	/*font-weight: 400;*/ /*font-weight transition not yet supported */
 	opacity: 1;
 }
 
@@ -222,12 +202,9 @@ button:not(:disabled) {
 	color: #333;
 	padding: 36px;
 	left: 0;
-	/*top: calc(80px + 15%);
-	height: calc(85% - 80px);*/
 	top: 25%;
 	height: 75%;
 	width: 100%;
-	/*text-align: center;*/
 	text-align: justify;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
@@ -250,17 +227,15 @@ button:not(:disabled) {
 
 .project-box {
 	margin-bottom: 16px;
-	/*max-width: 75%;*/
 	padding: 32px;
-	/*background-color: rgba(0, 0, 0, 0.1);*/
 	background-color: #fff;
-	/*border-radius: 6px;*/
-	/*box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);*/
 	will-change: opacity;
 }
+
 .project-box:not(:last-child) {
 	border-bottom: 2px solid #EEE;
 }
+
 @media (max-width: 767px) {
 	.project-box {
 		padding: 4px;
@@ -287,31 +262,17 @@ button:not(:disabled) {
 	width: 100%;
 }
 
-/*.screenshots a {
-	cursor: pointer;
-	user-select: none;
-}*/
-
 .screenshots a:not(:last-child) {
 	margin-right: 16px;
 }
 
-/*.screenshots a img {
-	zoom: 20%;
-}*/
-
 .screenshots-popup {
 	display: flex;
 	position: fixed;
-	/*box-shadow: 4px 8px 18px 0px rgba(0, 0, 0, 0.5);*/
-	/*left: 50%;
-	top: 50%;*/
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	/*transform: translate(-50%, -50%);
-	user-select: none;*/
 	flex-direction: column;
 	justify-content: center;
 	z-index: 10;
@@ -328,10 +289,6 @@ button:not(:disabled) {
 	justify-content: center;
 }
 
-/*.screenshots-popup .nav:hover {
-	background-color: rgba(255, 255, 255, 0.5);
-}*/
-
 .screenshots-popup .nav.prev {
 	left: 0;
 }
@@ -345,28 +302,18 @@ button:not(:disabled) {
 	right: 0;
 	height: 36px;
 }
-/*
-.screenshots-popup-overlay {
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	z-index: 5;
-}
-*/
+
 @media (max-width: 767px) {
 	svg[id^="i-"] {
 		height: 22px;
 		width: 22px;
 	}
+
 	.screenshots-popup .nav {
 		margin: 0;
 	}
 }
-/*	16.11.2018 firefox не поддерживает указание width= прямо в <svg>, 
-	пришлось перенести сюда */
+
 svg[id="kaliningrad"] {
 	width: 25vw;
 }

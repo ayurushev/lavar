@@ -18,11 +18,9 @@ app.directive('scrollHandler', ['$document', '$timeout', '$transitions', functio
 
 			element.on('scroll', function(event) {
 				if (content.scrollHeight <= window.innerHeight) return;
-				//var scrollTop = Math.max(content.scrollTop, 0);
 				$timeout.cancel(timeout);
 				collapse(content.scrollTop >= lastScrollTop);
 				timeout = $timeout(function() {
-					//console.log(window.innerHeight, content.scrollHeight);
 					lastScrollTop = content.scrollTop;
 				}, 150);
 			});

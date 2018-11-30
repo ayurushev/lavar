@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.router', 'templates']);
+var app = angular.module('app', ['ui.router', 'vcRecaptcha', 'templates']);
 
 app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 	$stateProvider.state('intro', {

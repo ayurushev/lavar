@@ -17,6 +17,7 @@
   "dependencies": {
     "animejs": "^2.2.0",
     "angular": "1.6.10",
-    "angular-ui-router": "^1.0.19"
+    "angular-ui-router": "^1.0.19",
+    "angular-recaptcha": "^4.2.0"
   }
 }

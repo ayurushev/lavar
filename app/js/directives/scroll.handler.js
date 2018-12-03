@@ -2,7 +2,7 @@ app.directive('scrollHandler', ['$document', '$timeout', '$transitions', functio
 	return {
 		restrict: 'A',
 		link: function(scope, element, attrs) {
-			var mainMenu, content, cssContentHeight, cssContentHeight, cssContentTop, lastScrollTop = 0, timeout;
+			var mainMenu, content, cssMenuHeight, cssContentHeight, cssContentTop, lastScrollTop = 0, timeout;
 
 			var collapse = function(value) {
 				angular.element(mainMenu).css({

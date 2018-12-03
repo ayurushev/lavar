@@ -1,4 +1,4 @@
-app.controller('ContactController', ['$scope', '$http', function($scope, $http) {
+app.controller('ContactController', ['$scope', '$http', 'vcRecaptchaService', function($scope, $http, vcRecaptchaService) {
 	$scope.form = {};
 
 	$scope.sendMessage = function() {
@@ -7,10 +7,11 @@ app.controller('ContactController', ['$scope', '$http', function($scope, $http) 
 			$scope.busy = false;
 			var data = res.data;
 			if (data.success == true) {
+				alert('Спасибо! Ваше письмо отправлено.');
 				$scope.form = {};
-				alert('Спасибо! Ваше письмо отправлено.')
+				vcRecaptchaService.reload();
 			} else {
-				alert('Ошибка!')
+				alert('Ошибка!');
 			}
 		});
 	}

@@ -30,7 +30,7 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			name: 'TeSol',
 			url: 'https://lavar.mercloud.com/p/tesol',
 			ss: ['tesol01fs.png', 'tesol02fs.png'],
-			description: 'Веб-приложение для автоматизации бизнес-процессов на основном месте работы. Помогает быстрее готовить типовые технические решения, а также отслеживать количество свободных портов на узлах доступа. Все данные храняться локально браузером в объекте localStorage.',
+			description: 'Веб-приложение для автоматизации бизнес-процессов на основном месте работы. Помогает быстрее готовить типовые технические решения, а также отслеживать количество свободных портов на узлах доступа. Все данные хранятся локально браузером в объекте localStorage.',
 			technologies: [
 				{ type: 'Frameworks/Libraries', value: 'AngularJS, Angular Material, jQuery' },
 				{ type: 'Build', value: 'Brunch' }
@@ -81,7 +81,8 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 		{
 			order: 7,
 			category: 1,
-			name: 'Tickets (2002)',
+			name: 'Tickets',
+			year: '2002',
 			ss: ['tickets.png', 'tdbcreator.png'],
 			description: 'Программа тестирования персонала. Состоит из 2-х отдельных программ: самого тестировщика и программы для создания файлов с тестами.',
 			discontinued: true,
@@ -90,7 +91,8 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 		{
 			order: 8,
 			category: 1,
-			name: 'Автоматизация РП (2009-2011)',
+			name: 'Автоматизация РП',
+			year: '2009-2011',
 			ss: ['dslamupc.png', 'dslamac.png', 'des3200ac.png'],
 			description: 'Ряд утилит для автоматизации рабочих процессов. Возможность подсчета пользовательских профилей на DSLAM Alcatel серии 7302/7330. Подключение к устройствам из списка по протоколу Telnet и выполнение заданных команд. Быстрое создание конфигурационных файлов для коммутаторов D-Link серии DES-3200-XX. Система учета клиентского оборудования (склад-клиент) и тд.',
 			discontinued: true,
@@ -99,7 +101,8 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 		{
 			order: 9,
 			category: 1,
-			name: 'LITPoller (2010)',
+			name: 'LITPoller',
+			year: '2010',
 			ss: ['litpoller.png'],
 			description: 'Комплексная утилита для мониторинга состояния сетевых элементов. Позволяет проводить опрос устройств как по протоколу ICMP, так и по протоколу Telnet (проходя авторизацию на устройстве, выполняя заданную команду и интерпретируя её вывод на основе специальных шаблонов).',
 			discontinued: true,
@@ -108,7 +111,8 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 		{
 			order: 10,
 			category: 1,
-			name: 'Частный заказ (2008-2012)',
+			name: 'Частный заказ',
+			year: '2008-2012',
 			ss: ['autoru.png', 'carhunter.png'],
 			description: 'Серия программ, позволяющих отслеживать новые предложения (по автомобилям) на популярных интернет-сайтах (Auto.ru, AutoScout24.de, Mobile.de и тд.).',
 			discontinued: true,

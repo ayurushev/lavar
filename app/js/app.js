@@ -29,7 +29,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
 	$locationProvider.html5Mode(true);
 }]);
 
-app.run(['$rootScope', '$transitions', '$window', '$interval', function($rootScope, $transitions, $window, $interval) {
+app.run(['$rootScope', '$transitions', '$window', function($rootScope, $transitions, $window) {
 
 	$transitions.onSuccess({}, function(trans) {
 		var title = trans.to().title;

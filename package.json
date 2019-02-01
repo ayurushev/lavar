@@ -3,10 +3,10 @@
   "description": "",
   "author": "Andrei Yurushev",
   "version": "1.0.0",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ayurushev/lavar.git"
   },
   "scripts": {
     "server": "brunch watch --server",

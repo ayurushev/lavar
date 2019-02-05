@@ -2,10 +2,22 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 	$scope.categories = ['Web', 'Windows', 'Mobile'];
 	$scope.projects = [
 		{
-			order: 0,
+			category: 0,
+			name: 'Airfare Tracker 2',
+			url: 'https://lavar.mercloud.com/p/aft2',
+			repository: 'https://github.com/ayurushev/airfaretracker2',
+			ss: ['aft201fs.png', 'aft202fs.png'],
+			description: 'Обновленная версия веб-приложения для отслеживания стоимости перелетов у авиакомпании Ryanair. Добавлена автоматическая загрузка списка доступных дат при выборе аэропорта вылета и назначения.',
+			technologies: [
+				{ type: 'Frameworks/Libraries', value: 'AngularJS, AngularJS Material, Angular Chart (Chart.js)' },
+				{ type: 'Build', value: 'Brunch' }
+			]
+		},
+		{
 			category: 0,
 			name: 'Этот сайт',
 			url: 'https://lavar.mercloud.com',
+			repository: 'https://github.com/ayurushev/lavar',
 			description: 'Немного обо мне, описание работ с примененными технологиями и контактная информация.',
 			technologies: [
 				{ type: 'Frameworks/Libraries', value: 'AngularJS, anime.js' },
@@ -13,19 +25,17 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			]
 		},
 		{
-			order: 4,
 			category: 0,
 			name: 'Airfare Tracker',
 			url: 'https://lavar.mercloud.com/p/aft',
 			ss: ['aft01fs.png', 'aft02fs.png'],
-			description: '<p>Веб-приложение, позволяющее отслеживать цены на перелеты у авиакомпании Ryanair.</p>Ведется статистика стоимости билетов. Все данные хранятся локально браузером в объекте localStorage.',
+			description: '<p>Веб-приложение, позволяющее отслеживать цены на перелеты у авиакомпании Ryanair.</p>Ведется статистика стоимости билетов. Когда цена билетов меняется, проигрывается короткий звуковой сигнал. Все данные хранятся локально браузером в объекте localStorage.',
 			technologies: [
 				{ type: 'Frameworks/Libraries', value: 'AngularJS, Angular Material, jQuery' },
 				{ type: 'Build', value: 'Brunch' }
 			]
 		},
 		{
-			order: 5,
 			category: 0,
 			name: 'TeSol',
 			url: 'https://lavar.mercloud.com/p/tesol',
@@ -37,7 +47,6 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			]
 		},
 		{
-			order: 1,
 			category: 0,
 			name: 'MERcloud App v2.0',
 			url: 'https://app.mercloud.com',
@@ -53,7 +62,6 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			]
 		},
 		{
-			order: 2,
 			category: 0,
 			name: 'MERcloud Website',
 			url: 'https://www.mercloud.com',
@@ -65,7 +73,6 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			]
 		},
 		{
-			order: 3,
 			category: 0,
 			name: 'MERcloud App v1.0',
 			url: 'http://www.mercloud.ru',
@@ -79,7 +86,6 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			]
 		},
 		{
-			order: 7,
 			category: 1,
 			name: 'Tickets',
 			year: '2002',
@@ -89,7 +95,6 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			technologies: [{ type: 'Language', value: 'Delphi' }]
 		},
 		{
-			order: 8,
 			category: 1,
 			name: 'Автоматизация РП',
 			year: '2009-2011',
@@ -99,7 +104,6 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			technologies: [{ type: 'Language', value: 'Delphi, Perl' }]
 		},
 		{
-			order: 9,
 			category: 1,
 			name: 'LITPoller',
 			year: '2010',
@@ -109,7 +113,6 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			technologies: [{ type: 'Language', value: 'Delphi' }]
 		},
 		{
-			order: 10,
 			category: 1,
 			name: 'Частный заказ',
 			year: '2008-2012',

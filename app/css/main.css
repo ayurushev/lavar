@@ -217,30 +217,21 @@ button:not(:disabled) {
 	}
 }
 
-.email:before {
-	content: "lavar";
-}
-
-.email:after {
-	content: "@inbox.ru";
-}
-
-.project-box {
+.content-box {
 	margin-bottom: 16px;
 	padding: 32px;
 	background-color: #fff;
 	will-change: opacity;
 }
 
-.project-box:not(:last-child) {
+.content-box:not(:last-child) {
 	border-bottom: 2px solid #EEE;
 }
 
 @media (max-width: 767px) {
-	.project-box {
+	.content-box {
 		padding: 4px;
 		max-width: 100%;
-		border-bottom: 2px solid #DDD;
 	}
 }
 

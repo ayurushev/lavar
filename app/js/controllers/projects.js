@@ -1,5 +1,11 @@
 app.controller('ProjectsController', ['$scope', function($scope) {
-	$scope.categories = ['Web', 'Windows', 'Mobile'];
+	$scope.categories = ['Web', 'Windows', 'Mobile', 'Design'];
+	$scope.categoryFilter = undefined;
+
+	$scope.applyCategoryFilter = function(index) {
+		$scope.categoryFilter = index;
+	}
+
 	$scope.projects = [
 		{
 			category: 0,

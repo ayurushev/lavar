@@ -17,19 +17,22 @@ app.directive('scrollHandler', ['$document', '$timeout', '$transitions', functio
 			}
 
 			element.on('scroll', function(event) {
-				if (content.scrollHeight <= window.innerHeight) return;
-				$timeout.cancel(timeout);
-				collapse(content.scrollTop >= lastScrollTop);
-				timeout = $timeout(function() {
-					lastScrollTop = content.scrollTop;
-				}, 150);
+				//if (content.scrollHeight <= window.innerHeight) return;
+				// in iOS thanks to momentum/inertial scroll scrollTop can have "out of bounds" values
+				var scrollTop = content.scrollTop + content.clientHeight;
+				if (scrollTop >= content.scrollHeight || scrollTop <= content.clientHeight) {
+					event.preventDefault(); // important to prevent mobile scroll "stalling"
+					return;
+				}
+				collapse(scrollTop > lastScrollTop);
+				lastScrollTop = scrollTop;
 			});
 
 			$transitions.onStart({}, function(trans) {
 				collapse(false);
 			});
 
-  		$timeout(function() {
+			$timeout(function() {
   			mainMenu = $document[0].querySelector('#mainMenu');
 				content = $document[0].querySelector('#content');
 				cssMenuHeight = mainMenu.style.height;

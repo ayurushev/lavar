@@ -1,5 +1,5 @@
 <submenu on-hide="applyCategoryFilter()" title="Категория">
-	<a style="padding: 0 16px" class="fw-300" ng-repeat="c in categories" ng-class="{ 'fw-500': categoryFilter === $index }" href="javascript:;" ng-click="applyCategoryFilter($index)">{{ c }}</a>
+	<a style="padding: 0 16px" href="javascript:;" class="fw-300" ng-repeat="c in categories" ng-class="{ 'fw-500': categoryFilter === $index }" ng-click="applyCategoryFilter($index)">{{ c }}<span ng-if="!$last">&nbsp;</span></a>
 </submenu>
 <section>
 	<div class="content-box" ng-repeat="p in (filteredProjects = (projects | filter: { category: categoryFilter }))"> <!--anime effect="slideInBottom">-->

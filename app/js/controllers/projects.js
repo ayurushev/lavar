@@ -1,6 +1,6 @@
 app.controller('ProjectsController', ['$scope', function($scope) {
 	$scope.categories = ['Web', 'Windows', 'Mobile', 'Design'];
-	$scope.categoryFilter = undefined;
+	$scope.categoryFilter;
 
 	$scope.applyCategoryFilter = function(index) {
 		$scope.categoryFilter = index;
@@ -35,7 +35,7 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			name: 'Airfare Tracker',
 			url: 'https://lavar.mercloud.com/p/aft',
 			ss: ['aft01fs.png', 'aft02fs.png'],
-			description: '<p>Веб-приложение, позволяющее отслеживать цены на перелеты у авиакомпании Ryanair.</p>Ведется статистика стоимости билетов. Когда цена билетов меняется, проигрывается короткий звуковой сигнал. Все данные хранятся локально браузером в объекте localStorage.',
+			description: 'Веб-приложение, позволяющее отслеживать цены на перелеты у авиакомпании Ryanair. Ведется статистика стоимости билетов. Когда цена билетов меняется, проигрывается короткий звуковой сигнал. Все данные хранятся локально браузером в объекте localStorage.',
 			technologies: [
 				{ type: 'Frameworks/Libraries', value: 'AngularJS, Angular Material, jQuery' },
 				{ type: 'Build', value: 'Brunch' }

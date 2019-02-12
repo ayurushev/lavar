@@ -1,22 +1,22 @@
 <section class="center-container">
 	<div id="mainMenu" class="flex space-around center" anime effect="slideInLeft" on-complete="complete('step2')" ng-class="{ 'active': contentMode }">
 		<a ui-sref=".about" ui-sref-active="active" anime-text effect="fx2" keep="true" ng-if="step2">Обо мне</a>
-		<a ui-sref=".projects" ui-sref-active="active" anime-text effect="fx2" keep="true" ng-if="step2" on-complete="complete('step2_2')">Работы</a>
-		<a ui-sref=".contact" ui-sref-active="active" anime-text effect="fx2" on-complete="complete('step3')" keep="true" ng-if="step2">Контакт</a>
+		<a ui-sref=".projects" ui-sref-active="active" anime-text effect="fx2" keep="true" on-complete="complete('step2_2')" ng-if="step2">Работы</a>
+		<a ui-sref=".contact" ui-sref-active="active" anime-text effect="fx2" keep="true" on-complete="complete('step3')" ng-if="step2">Контакт</a>
 		<div style="width: 10%; height: 100%" class="flex space-around center" ng-if="contentMode">
 			<a ui-sref="home" ng-click="collapse()">
-				<svg id="i-caret-bottom" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+				<svg-icon id="i-caret-bottom">
 					<path d="M30 10 L16 26 2 10 Z" />
-				</svg>
+				</svg-icon>
 			</a>
 		</div>
 	</div>
 	<div id="content" ui-view ng-show="contentMode" scroll-handler></div>
-	<div class="footer flex center" anime effect="slideInBottom" ng-if="!contentMode && step3">
+	<div class="footer flex center" ng-show="!contentMode && step3">
 		<a style="margin-left: 36px" ui-sref="intro" title="Назад">
-			<svg id="i-arrow-left" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+			<svg-icon id="i-arrow-left">
 				<path d="M10 6 L2 16 10 26 M2 16 L30 16" />
-			</svg>
+			</svg-icon>
 		</a>
 	</div>
 </section>

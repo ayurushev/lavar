@@ -61,10 +61,8 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			description: 'Коммерческое веб-приложение для врачей-стоматологов и стоматологических клиник. Позволяет вести расписание приемов. Создавать наряды, выставлять счета. Вести дневник по форме 043/У. Также имеется прейскурант на выполняемые работы, время работы, журнал движения средств и многое другое.',
 			technologies: [
 				{ type: 'Frameworks/Libraries', value: 'AngularJS, Angular Material, jQuery' },
-				{ type: 'Components', value: 'UI-Router, Angular Chart (Chart.js), ngImgCrop, angular-loading-bar, Animate.css, custom-made <small>(50+)</small>' },
 				{ type: 'Build', value: 'Brunch' },
-				{ type: 'Back-end', value: 'PHP, Slim, MySQL' },
-				{ type: 'Deployment', value: 'Microsoft Azure VM' }
+				{ type: 'Back-end', value: 'LAMP / Microsoft Azure VM' }
 			]
 		},
 		{
@@ -75,7 +73,7 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			description: 'Домашная страница проекта MERcloud App v2.0. Описание основных функций продукта. Онлайн-регистрация с возможностью получения 1 месяца бесплатного пользования.',
 			technologies: [
 				{ type: 'Frameworks/Libraries', value: 'AngularJS, Angular Material, jQuery' },
-				{ type: 'Back-end', value: 'PHP, Slim, MySQL' }
+				{ type: 'Back-end', value: 'LAMP' }
 			]
 		},
 		{
@@ -87,8 +85,7 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			discontinued: true,
 			technologies: [
 				{ type: 'Frameworks/Libraries', value: 'jQuery' },
-				{ type: 'Back-end', value: 'PHP, Slim, MySQL' },
-				{ type: 'Deployment', value: 'Beget.ru Virtual Hosting' }
+				{ type: 'Back-end', value: 'LAMP / Virtual Hosting' }
 			]
 		},
 		{

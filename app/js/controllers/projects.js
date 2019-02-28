@@ -12,11 +12,20 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			name: 'Airfare Tracker 2',
 			url: 'https://lavar.mercloud.com/p/aft2',
 			repository: 'https://github.com/ayurushev/airfaretracker2',
-			ss: ['aft201fs.png', 'aft202fs.png'],
+			ss: ['aft201fs.png', 'aft202fs.png', 'aft203fs.png'],
 			description: 'Обновленная версия веб-приложения для отслеживания стоимости перелетов у авиакомпании Ryanair. Добавлена автоматическая загрузка списка доступных дат при выборе аэропорта вылета и назначения.',
 			technologies: [
 				{ type: 'Frameworks/Libraries', value: 'AngularJS, AngularJS Material, Angular Chart (Chart.js)' },
 				{ type: 'Build', value: 'Brunch' }
+			]
+		},
+		{
+			category: 3,
+			name: 'Логотип 1',
+			ss: ['kirbai01.png', 'kirbai02.png', 'kirbai03.png', 'kirbai04.png'],
+			//description: 'Несколько версий логотипа для стилиста-парикмахера Елены Кирбай - ведущего тренера-технолога студии "Вирсавия" г. Калининград.',
+			technologies: [
+				{ type: 'Made with', value: 'Inkscape 0.92' }
 			]
 		},
 		{
@@ -86,6 +95,14 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 			technologies: [
 				{ type: 'Frameworks/Libraries', value: 'jQuery' },
 				{ type: 'Back-end', value: 'LAMP / Virtual Hosting' }
+			]
+		},
+		{
+			category: 3,
+			name: '3D визуализация 1',
+			ss: ['lapart01.jpg', 'lapart02.jpg', 'lapart03.jpg', 'lapart04.jpg', 'lapart05.jpg'],
+			technologies: [
+				{ type: 'Made with', value: 'Sketchup 2015, V-Ray' }
 			]
 		},
 		{

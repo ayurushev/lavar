@@ -150,14 +150,14 @@ button:not(:disabled) {
 #mainMenu {
 	position: absolute;
 	/*background: #666 url(../img/lavar.svg) center center repeat-x;
-	background-size: contain;*/
+	background-size: contain;
 	background: #EF6C00 url(../img/lavar.svg) center bottom no-repeat;
-	background-size: auto 80%;
-	/*background: linear-gradient(270deg, #E64A19, #EF6C00);
+	background-size: auto 80%;*/
+	background: linear-gradient(270deg, #E64A19, #EF6C00);
 	background-size: 200% 200%;
 	-webkit-animation: mainMenuBgAnim 15s ease infinite;
 	-moz-animation: mainMenuBgAnim 15s ease infinite;
-	animation: mainMenuBgAnim 15s ease infinite;*/
+	animation: mainMenuBgAnim 15s ease infinite;
 	font-size: calc(12px + 1.5vw);
 	font-weight: 300;
 	height: 25%;
@@ -187,7 +187,6 @@ button:not(:disabled) {
 
 #mainMenu.active {
 	box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.5);
-	/*border-bottom: 8px solid #FFF;*/
 }
 
 #mainMenu a {
@@ -200,8 +199,6 @@ button:not(:disabled) {
 }
 
 #mainMenu a.active {
-	/*background-color: #666;
-	padding: 4px;*/
 	opacity: 1;
 }
 
@@ -302,6 +299,16 @@ ul {
 	padding-left: 32px;
 }
 
+.my-photo {
+	margin-top: 16px;
+	background: url(../img/me.jpg) center center no-repeat;
+	border-radius: 50%;
+	max-height: 231px;
+	min-height: 231px;
+	min-width: 231px;
+	max-width: 231px;
+}
+
 @media (max-width: 767px) {
 	.flex.column-sm {
 		flex-direction: column;
@@ -336,5 +343,9 @@ ul {
 
 	ul {
 		padding-left: 16px;
+	}
+
+	.my-photo {
+		margin-top: 0;
 	}
 }

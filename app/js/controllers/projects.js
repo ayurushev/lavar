@@ -9,6 +9,43 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 	$scope.projects = [
 		{
 			category: 0,
+			name: 'Utility Payments',
+			url: 'https://lavar.mercloud.com/p/up',
+			repository: 'https://github.com/ayurushev/utilitypayments',
+			ss: ['up01fs.png', 'up02fs.png', 'up03fs.png'],
+			description: 'Веб-приложение (адаптировано для мобильных устройств) для ведения учета коммунальных платежей. Ведется статистика и расчет (последние - текущие). Все данные сохраняются в БД MongoDB (связка Express и Mongoose). Для авторизации пользователя используется JSON Web Token.',
+			technologies: [
+				{ type: 'Frameworks/Libraries', value: 'AngularJS, AngularJS Material' },
+				{ type: 'Build', value: 'Brunch' },
+				{ type: 'Back-end', value: 'Node.JS, MongoDB' }
+			]
+		},
+		{
+			category: 0,
+			name: 'Travel Checklist CS',
+			url: 'https://lavar.mercloud.com/p/tchecklist-cs',
+			repository: 'https://github.com/ayurushev/travelchecklist-cs',
+			ss: ['tchecklist01fs.jpg', 'tchecklist02fs.jpg', 'tchecklist03fs.jpg'],
+			description: 'Эта версия позволяет сохранять все данные в БД MongoDB (связка Express и Mongoose). Для авторизации пользователя используется JSON Web Token.',
+			technologies: [
+				{ type: 'Frameworks/Libraries', value: 'AngularJS, AngularJS Material' },
+				{ type: 'Build', value: 'Brunch' },
+				{ type: 'Back-end', value: 'Node.JS, MongoDB' }
+			]
+		},
+		{
+			category: 0,
+			name: 'Travel Checklist',
+			url: 'https://lavar.mercloud.com/p/tchecklist',
+			repository: 'https://github.com/ayurushev/travelchecklist',
+			description: 'Веб-приложение (адаптировано для мобильных устройств) для планирования поездок (создавал для себя, когда планировал свой отпуск). Можно добавлять позиции и подпозиции с ценами. Отмечать выполненные позиции. Данные сохраняются в localStorage.',
+			technologies: [
+				{ type: 'Frameworks/Libraries', value: 'AngularJS, AngularJS Material' },
+				{ type: 'Build', value: 'Brunch' }
+			]
+		},
+		{
+			category: 0,
 			name: 'Airfare Tracker 2',
 			url: 'https://lavar.mercloud.com/p/aft2',
 			repository: 'https://github.com/ayurushev/airfaretracker2',

@@ -16,7 +16,7 @@
   "dependencies": {},
   "devDependencies": {
     "angularjs-templates-brunch": "^1.0.0",
-    "clean-css-brunch": "^2.10.0",
+    "clean-css-brunch": "^3.0.0",
     "ng-annotate": "^1.2.2",
     "uglify-es-brunch": "^1.0.5"
   }
